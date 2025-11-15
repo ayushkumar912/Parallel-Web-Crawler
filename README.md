@@ -67,9 +67,6 @@ python -c "from mpi4py import MPI; print('MPI installation successful')"
 # Run with default settings (4 processes)
 mpiexec -n 4 python main.py
 
-# Run comprehensive demo
-./demo.sh
-```
 
 ### Advanced Usage Examples
 
