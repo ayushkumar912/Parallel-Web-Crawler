@@ -2,7 +2,7 @@
 
 A high-performance, enterprise-grade web crawler built with Python and MPI for distributed processing, featuring comprehensive analysis tools and flexible configuration management.
 
-## 🚀 Key Features
+## Key Features
 
 ### Core Crawling Capabilities
 - **Parallel Processing**: MPI-based master-worker architecture with dynamic load balancing
@@ -21,13 +21,13 @@ A high-performance, enterprise-grade web crawler built with Python and MPI for d
 - **SSL Flexibility**: Configurable SSL verification for diverse environments
 - **Content Analysis**: Title extraction, content length tracking, and MIME type detection
 
-## 📋 Requirements
+## Requirements
 
 - **Python 3.7+**
 - **MPI Implementation**: OpenMPI or MPICH
 - **Python Packages**: `mpi4py`, `requests`, `beautifulsoup4`, `urllib3`
 
-## 🛠️ Installation
+## Installation
 
 ### 1. Install MPI
 ```bash
@@ -60,7 +60,7 @@ mpiexec --version
 python -c "from mpi4py import MPI; print('MPI installation successful')"
 ```
 
-## 🎯 Usage
+##  Usage
 
 ### Quick Start
 ```bash
@@ -139,7 +139,7 @@ python config_manager.py --validate my_config.json
 5. **Storage**: Results stored in SQLite with comprehensive metadata
 6. **Analysis**: Post-crawl analysis generates detailed reports
 
-## 📊 Configuration
+## Configuration
 
 ### Configuration File Structure
 ```json
@@ -174,7 +174,7 @@ python config_manager.py --validate my_config.json
 | `respect_robots_txt` | Honor robots.txt files | true |
 | `verify_ssl` | SSL certificate verification | false |
 
-## 📈 Output & Analysis
+##  Output & Analysis
 
 ### Database Schema
 ```sql
@@ -203,7 +203,7 @@ CREATE TABLE crawled_urls (
 
 ### Sample Analysis Output
 ```
-📊 CRAWL ANALYSIS REPORT
+ CRAWL ANALYSIS REPORT
 ========================
 Total URLs Processed: 1,502
 Unique Domains: 147
@@ -211,18 +211,18 @@ Success Rate: 84.2%
 Average Response Time: 1.26s
 Total Content: 124.79 MB
 
-🏆 TOP DOMAINS:
+ TOP DOMAINS:
 - peps.python.org: 596 pages (39.7%)
 - stackoverflow.com: 273 pages (18.2%)
 - docs.python.org: 198 pages (13.2%)
 
-⚠️  ERROR SUMMARY:
+ ERROR SUMMARY:
 - Timeout errors: 127 (8.5%)
 - Connection errors: 89 (5.9%)
 - HTTP errors: 48 (3.2%)
 ```
 
-## 🚀 Performance Benchmarks
+## Performance Benchmarks
 
 | Processes | URLs/sec | Domains | Efficiency |
 |-----------|----------|---------|------------|
@@ -233,12 +233,8 @@ Total Content: 124.79 MB
 
 *Performance varies based on network conditions, target sites, and hardware*
 
-## 🧪 Testing & Validation
+## Testing & Validation
 
-### Run Full Demo
-```bash
-./demo.sh
-```
 
 ### Individual Component Tests
 ```bash
@@ -255,7 +251,7 @@ python -c "from src.utils import normalize_url; print('✅ Utils OK')"
 python config_manager.py --validate
 ```
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -284,7 +280,7 @@ python config_manager.py --validate
    # Check robots.txt compliance
    ```
 
-## 🛡️ Security & Ethics
+## Security & Ethics
 
 - **Robots.txt Compliance**: Full respect for website crawling policies
 - **Rate Limiting**: Respectful crawling to avoid server overload
@@ -292,7 +288,7 @@ python config_manager.py --validate
 - **SSL Handling**: Configurable certificate validation
 - **Error Recovery**: Graceful handling of network issues
 
-## 📚 Advanced Usage
+##  Advanced Usage
 
 ### Custom URL Filtering
 ```python
@@ -320,7 +316,7 @@ crawler = CrawlerCore(config)
 result = crawler.crawl_url('https://example.com')
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 1. **Fork the repository**
 2. **Create feature branch**: `git checkout -b feature/amazing-feature`
@@ -346,21 +342,5 @@ mypy src/
 ## 📄 License
 
 MIT License - see [LICENSE](LICENSE) file for details.
-
-## 🏆 Achievements
-
-✅ **Modular Architecture** - Clean separation of concerns
-✅ **Depth-Limited BFS Crawling** - Intelligent traversal strategy
-✅ **Advanced URL Deduplication** - Efficient duplicate prevention
-✅ **Full Robots.txt Compliance** - Ethical crawling practices
-✅ **Robust SQLite Storage** - Persistent data management
-✅ **Intelligent Rate Limiting** - Server-respectful crawling
-✅ **Master-Worker MPI** - Scalable parallel processing
-✅ **Comprehensive Error Handling** - Production-ready reliability
-✅ **Detailed Analysis & Reporting** - Actionable insights
-✅ **Multiple Export Formats** - Flexible data output
-✅ **Configuration Management** - Flexible system configuration
-
----
 
 **Built with ❤️ for ethical, efficient, and scalable web crawling.**
